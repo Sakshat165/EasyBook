@@ -1,7 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const noteSchema = new Schema({
-   tile:{
+    //basically foriegn
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"user"
+
+    },
+   title:{
     type:String,
     required:true
    },
