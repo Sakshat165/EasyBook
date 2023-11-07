@@ -24,8 +24,8 @@ router.get('/fetchallnotes',fetchuser,async (req,res)=>
 
 //ROUTE 2:Get all the notes using: POST "/api/auth/addnotes".  login required
 router.post('/addnotes',fetchuser,[
-    body("title", "Enter Valid title").isLength({ min: 3 }),
-    body("description", "Enter Valid description").isLength({ min: 3 }),
+    body("title", "Enter Valid title").isLength({ min: 0 }),
+    body("description", "Enter Valid description").isLength({ min: 0 }),
 ],async (req,res)=>
 {
     const{title,description,tag}=req.body;

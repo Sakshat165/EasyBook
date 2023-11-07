@@ -58,8 +58,23 @@ const NoteState=(props)=>{
     }
 
 
+    //UPDATE
+    const editnote=async (id,title,description,tag)=>
+    {
+        const response = await fetch(`http://localhost:5000/api/notes/updatenotes/${id}`, {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+              "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjU0NzFmOGI1MTBiNzlkZWU1NzMyMTBiIn0sImlhdCI6MTY5OTE1OTk0N30.IFC1c4A4PRc5bjDgBkdKLW2MSNBuFomqeVivSpGcZJ0"
+            },
+            body: JSON.stringify({title,description,tag})
+          });
+
+    }
+
+
     return(
-        <NoteContext.Provider value={{notes,setNotes,addnote,deletenote,getnotes}}>
+        <NoteContext.Provider value={{notes,setNotes,addnote,deletenote,getnotes,editnote}}>
             {props.children}
         </NoteContext.Provider>
     )
