@@ -27,7 +27,6 @@ export default function Notes() {
     {
         editnote(note.id,note.etitle,note.edescription,note.etag)
         refClose.current.click()
-        console.log(note)
     }
 
     const handlechange=(e)=>

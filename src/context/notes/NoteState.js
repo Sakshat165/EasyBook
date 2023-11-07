@@ -36,7 +36,8 @@ const NoteState=(props)=>{
             },
             body: JSON.stringify({title,description,tag})
           });
-          
+          const json=await response.json()
+         console.log(json)
           
     }
 
@@ -51,7 +52,8 @@ const NoteState=(props)=>{
               "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjU0NzFmOGI1MTBiNzlkZWU1NzMyMTBiIn0sImlhdCI6MTY5OTE1OTk0N30.IFC1c4A4PRc5bjDgBkdKLW2MSNBuFomqeVivSpGcZJ0"
             }
           });
-         
+         const json=await response.json()
+         console.log(json)
 
         const newNotes=notes.filter((note)=>{return note._id!==id})
         setNotes(newNotes)
@@ -69,6 +71,8 @@ const NoteState=(props)=>{
             },
             body: JSON.stringify({title,description,tag})
           });
+          const json=await response.json()
+          console.log(json)
 
     }
 
