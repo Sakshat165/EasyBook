@@ -3,16 +3,18 @@ import { Link,useLocation, useNavigate} from 'react-router-dom'
 export default function Navbar() {
     let location = useLocation();
     const navigate=useNavigate();
-    
+
+
     const handleclick=()=>
     {
       localStorage.removeItem('token');
       navigate('/login')
     }
 
+
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-dark text-light bg-dark">
+      <>
+    <nav className="navbar navbar-expand-lg navbar-dark text-light bg-dark">
   <div className="container-fluid">
     <Link className="navbar-brand" to="/">EasyBook</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +32,14 @@ export default function Navbar() {
       {!localStorage.getItem('token')?<form className='d-flex'>
       <Link className="btn btn-primary mx-1"  to="/login">Login</Link>
       <Link className="btn btn-primary mx-1"  to="/signup">Signup</Link>
-      </form >:<button className="btn btn-primary" onClick={handleclick}>Signout</button>}
+      </form >:<>
+      <i className="fa-solid fa-user"  style={{color: "#1160e8",}} />
+      <button className="btn btn-primary mx-4 " onClick={handleclick}>Signout</button>
+      </>
+      }
     </div>
   </div>
 </nav>
-    </div>
+    </>
   )
 }

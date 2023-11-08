@@ -23,6 +23,9 @@ export default function Login() {
             localStorage.setItem('token',json.authtoken)
             navigate("/")
           }
+          else{
+            alert("Invalid Details")
+          }
     }
 
     const handlechange=(e)=>
