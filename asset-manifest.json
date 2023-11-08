@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/EasyBook/static/css/main.598a6723.css",
-    "main.js": "/EasyBook/static/js/main.c42d002f.js",
-    "static/js/787.30ee6f6a.chunk.js": "/EasyBook/static/js/787.30ee6f6a.chunk.js",
-    "index.html": "/EasyBook/index.html",
-    "main.598a6723.css.map": "/EasyBook/static/css/main.598a6723.css.map",
-    "main.c42d002f.js.map": "/EasyBook/static/js/main.c42d002f.js.map",
-    "787.30ee6f6a.chunk.js.map": "/EasyBook/static/js/787.30ee6f6a.chunk.js.map"
+    "main.css": "/login/static/css/main.598a6723.css",
+    "main.js": "/login/static/js/main.12399994.js",
+    "static/js/787.30ee6f6a.chunk.js": "/login/static/js/787.30ee6f6a.chunk.js",
+    "index.html": "/login/index.html",
+    "main.598a6723.css.map": "/login/static/css/main.598a6723.css.map",
+    "main.12399994.js.map": "/login/static/js/main.12399994.js.map",
+    "787.30ee6f6a.chunk.js.map": "/login/static/js/787.30ee6f6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.598a6723.css",
-    "static/js/main.c42d002f.js"
+    "static/js/main.12399994.js"
   ]
 }
