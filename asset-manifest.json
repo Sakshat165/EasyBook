@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EasyBook/static/css/main.598a6723.css",
+    "main.js": "/EasyBook/static/js/main.c42d002f.js",
+    "static/js/787.30ee6f6a.chunk.js": "/EasyBook/static/js/787.30ee6f6a.chunk.js",
+    "index.html": "/EasyBook/index.html",
+    "main.598a6723.css.map": "/EasyBook/static/css/main.598a6723.css.map",
+    "main.c42d002f.js.map": "/EasyBook/static/js/main.c42d002f.js.map",
+    "787.30ee6f6a.chunk.js.map": "/EasyBook/static/js/787.30ee6f6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.598a6723.css",
+    "static/js/main.c42d002f.js"
+  ]
+}
