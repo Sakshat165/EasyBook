@@ -17,7 +17,6 @@ export default function Login() {
             body: JSON.stringify({email:cred.email,password:cred.password})
           });
           const json=await response.json()
-          console.log(json)
           if(json.authtoken)
           {
             //Save auth token and redirect
@@ -38,13 +37,13 @@ export default function Login() {
     </div>
     <form onSubmit={handlesubmit}> 
   <div className="form-group my-4">
-    <label htmlFor="exampleInputEmail1">Email address</label>
-    <input type="email" className="form-control"name="email" value={cred.email} aria-describedby="emailHelp" onChange={handlechange} placeholder="Enter email"/>
+    <label>Email address</label>
+    <input type="email" className="form-control" autoComplete="on"  id='email' name="email" value={cred.email} aria-describedby="emailHelp" onChange={handlechange} placeholder="Enter email"/>
     <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div className="form-group">
-    <label htmlFor="exampleInputPassword1">Password</label>
-    <input type="password" className="form-control" name="password" value={cred.password} onChange={handlechange} placeholder="Password"/>
+    <label >Password</label>
+    <input type="password" className="form-control" id='password' autoComplete="on" name="password" value={cred.password} onChange={handlechange} placeholder="Password"/>
   </div>
   <button type="submit" className="btn btn-primary my-3">Login</button>
 </form>
